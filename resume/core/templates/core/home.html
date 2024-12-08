@@ -1,0 +1,37 @@
+{% extends "core/base.html" %} {% load static %} {% block content %}
+<div class="mt-5">
+  <div class="text-center">
+    <img
+      src="{% static 'core/images/shimul.jpg' %}"
+      alt="profilepic"
+      class="img-thumbnail mt-5"
+      width="250px"
+      height="150px"
+    />
+  </div>
+  <div class="text-white mt-2 mx-5 text-justify">
+    <h1 class="fw-bold satisfy-regular">Hello,</h1>
+    <div class="px-4 lh-2">
+      <p style="text-indent: 100px">
+        I am <b class="text-warning">Shimul Khan</b>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+      </p>
+    </div>
+  </div>
+  <div class="text-center">
+    <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 me-5"
+      >Hire me</a
+    >
+    <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+  </div>
+</div>
+
+{% endblock content %}
